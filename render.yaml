@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ai-realtime-dashboard-backend
+    name: ai-realtime-dashboard
     env: node
     plan: free
     buildCommand: "npm install"
