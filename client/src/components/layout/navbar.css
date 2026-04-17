@@ -1,0 +1,28 @@
+.navbar {
+  height: 56px;
+  background: #111827;
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.theme-btn {
+  background: #374151;
+  color: #f9fafb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.theme-btn:hover {
+  background: #4b5563;
+}

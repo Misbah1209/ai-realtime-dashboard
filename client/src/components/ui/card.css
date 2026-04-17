@@ -1,0 +1,21 @@
+.card {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.app.dark .card {
+  background: var(--card-bg-dark);
+}
+
+.card-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-body {
+  font-size: 14px;
+}

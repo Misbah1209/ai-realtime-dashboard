@@ -1,0 +1,70 @@
+:root {
+  --bg: #f5f5f7;
+  --bg-dark: #111827;
+  --text: #111827;
+  --text-dark: #f9fafb;
+  --card-bg: #ffffff;
+  --card-bg-dark: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app.light {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.app.dark .card {
+  background: var(--card-bg-dark);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.navbar button {
+  background: #4b5563;
+  color: #f9fafb;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  min-height: calc(100vh - 48px);
+}
+
+.sidebar {
+  width: 200px;
+  padding: 16px;
+  background: #e5e7eb;
+}
+
+.app.dark .sidebar {
+  background: #030712;
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ai-realtime-dashboard-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    rootDir: server
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
