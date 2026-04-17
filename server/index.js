@@ -18,7 +18,10 @@ app.use("/api/ai", aiRoutes);
 const server = http.createServer(app);
 
 // WebSocket server
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocket.Server({
+  server,
+  path: "/"
+});
 
 let clients = [];
 
@@ -57,3 +60,4 @@ const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
