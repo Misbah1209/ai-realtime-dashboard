@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 const Root: React.FC = () => {
   // Connect to WebSocket server
-  useWebSocket("wss://ai-realtime-dashboard-50nc.onrender.com");
+  useWebSocket("wss://ai-realtime-dashboard-3ayc.onrender.com/");
 
   return (
     <QueryClientProvider client={queryClient}>
